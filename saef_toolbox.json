@@ -9,14 +9,14 @@
 " RS_fnc_MedicalDiagnostics": {
 "prefix": " RS_fnc_MedicalDiagnostics",
 "body": [
-"[${0:_patient}] spawn  RS_fnc_MedicalDiagnostics;"
+"[_patient] spawn  RS_fnc_MedicalDiagnostics;"
 ],
 "description": " Allows medics to check if a player currently has any injuries that are not obvious"
 },
 " RS_fnc_PFH_ApplyDamage": {
 "prefix": " RS_fnc_PFH_ApplyDamage",
 "body": [
-"[${0:_target}, ${1:_selectionName}] spawn  RS_fnc_PFH_ApplyDamage;"
+"[_target, _selectionName] spawn  RS_fnc_PFH_ApplyDamage;"
 ],
 "description": " Re-applies damage... Barring some things: we stop bleeding if necessary and we don't re-apply pain"
 },
@@ -37,7 +37,7 @@
 " RS_fnc_PFH_ServerDamageDistribution": {
 "prefix": " RS_fnc_PFH_ServerDamageDistribution",
 "body": [
-"[${0:_target}, ${1:_selectionName}] spawn  RS_fnc_PFH_ServerDamageDistribution;"
+"[_target, _selectionName] spawn  RS_fnc_PFH_ServerDamageDistribution;"
 ],
 "description": " Tells the server to call a client and prevent healing from occuring. The reason I am doing this is because client to client communication appears to be unreliable."
 },
@@ -65,7 +65,7 @@
 " RS_fnc_Admin_AddMissionAction": {
 "prefix": " RS_fnc_Admin_AddMissionAction",
 "body": [
-"[${0:_parameters}, ${1:_script}, ${2:_desc}, ${3:_server}] spawn  RS_fnc_Admin_AddMissionAction;"
+"[_parameters, _script, _desc, _server] spawn  RS_fnc_Admin_AddMissionAction;"
 ],
 "description": " Generic function that gives ability to add additional mission functions to our Admin Utilities Ace Interaction Menu"
 },
@@ -79,21 +79,21 @@
 " RS_fnc_Admin_CheckTrigger": {
 "prefix": " RS_fnc_Admin_CheckTrigger",
 "body": [
-"[${0:_triggers}] spawn  RS_fnc_Admin_CheckTrigger;"
+"[_triggers] spawn  RS_fnc_Admin_CheckTrigger;"
 ],
 "description": " Evaluates triggers for mistakes"
 },
 " RS_fnc_Admin_CheckTrigger_SearchString": {
 "prefix": " RS_fnc_Admin_CheckTrigger_SearchString",
 "body": [
-"[${0:_attribute}, ${1:_trim}, ${2:_strings}] spawn  RS_fnc_Admin_CheckTrigger_SearchString;"
+"[_attribute, _trim, _strings] spawn  RS_fnc_Admin_CheckTrigger_SearchString;"
 ],
 "description": " Evaluates triggers for mistakes"
 },
 " RS_fnc_Admin_CreateRespawnPos": {
 "prefix": " RS_fnc_Admin_CreateRespawnPos",
 "body": [
-"[${0:_unit}] spawn  RS_fnc_Admin_CreateRespawnPos;"
+"[_unit] spawn  RS_fnc_Admin_CreateRespawnPos;"
 ],
 "description": " Adds Action to Player for Admin Utilities"
 },
@@ -107,42 +107,42 @@
 " RS_fnc_Admin_MissionMakerHelper": {
 "prefix": " RS_fnc_Admin_MissionMakerHelper",
 "body": [
-"[${0:_objects}, ${1:_markers}, ${2:_systems}] spawn  RS_fnc_Admin_MissionMakerHelper;"
+"[_objects, _markers, _systems] spawn  RS_fnc_Admin_MissionMakerHelper;"
 ],
 "description": " Hints out a bunch of useful information to the mission maker to let them know if something is missing."
 },
 " RS_fnc_Admin_RunScriptOnServer": {
 "prefix": " RS_fnc_Admin_RunScriptOnServer",
 "body": [
-"[${0:_params}, ${1:_script}] spawn  RS_fnc_Admin_RunScriptOnServer;"
+"[_params, _script] spawn  RS_fnc_Admin_RunScriptOnServer;"
 ],
 "description": " Takes script and parameters and executes it on the server"
 },
 " SAEF_AI_fnc_ModulePhysicalArtillery": {
 "prefix": " SAEF_AI_fnc_ModulePhysicalArtillery",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}] spawn  SAEF_AI_fnc_ModulePhysicalArtillery;"
+"[_logic, _units, _activated] spawn  SAEF_AI_fnc_ModulePhysicalArtillery;"
 ],
 "description": " Handles module functionality for physical artillery"
 },
 " SAEF_AI_fnc_PhysicalArtillery": {
 "prefix": " SAEF_AI_fnc_PhysicalArtillery",
 "body": [
-"[${0:_vehicles}, ${1:_positions}, ${2:_rounds}, ${3:_shellType}, ${4:_spread}] spawn  SAEF_AI_fnc_PhysicalArtillery;"
+"[_vehicles, _positions, _rounds, _shellType, _spread] spawn  SAEF_AI_fnc_PhysicalArtillery;"
 ],
 "description": " Gets specified vehicles to fire at a given location with a specified amount of rounds"
 },
 " SAEF_AB_fnc_Voices": {
 "prefix": " SAEF_AB_fnc_Voices",
 "body": [
-"[${0:_faction}, ${1:_time}] spawn  SAEF_AB_fnc_Voices;"
+"[_faction, _time] spawn  SAEF_AB_fnc_Voices;"
 ],
 "description": " Plays some custom voices from Menwar (Men of War: Assault Squad 2) in our WW2 Arma Missions"
 },
 " SAEF_AS_fnc_Area": {
 "prefix": " SAEF_AS_fnc_Area",
 "body": [
-"[${0:_marker}, ${1:_initVariable}, ${2:_variable}, ${3:_blockPatrol}, ${4:_blockGarrison}, ${5:_spawnUnits}, ${6:_spawnSide}, ${7:_lightVehicle}, ${8:_heavyVehicle}, ${9:_paraVehicle}, ${10:_playerValidationCodeBlock}, ${11:_customScripts}, ${12:_queueValidation}, ${13:_includeDetector}] spawn  SAEF_AS_fnc_Area;"
+"[_marker, _initVariable, _variable, _blockPatrol, _blockGarrison, _spawnUnits, _spawnSide, _lightVehicle, _heavyVehicle, _paraVehicle, _playerValidationCodeBlock, _customScripts, _queueValidation, _includeDetector] spawn  SAEF_AS_fnc_Area;"
 ],
 "description": " This is the basic layout for area spawns, and handling information around those areas."
 },
@@ -156,28 +156,28 @@
 " SAEF_AS_fnc_ConfigCoreValidation": {
 "prefix": " SAEF_AS_fnc_ConfigCoreValidation",
 "body": [
-"[${0:_logic}, ${1:_tag}] spawn  SAEF_AS_fnc_ConfigCoreValidation;"
+"[_logic, _tag] spawn  SAEF_AS_fnc_ConfigCoreValidation;"
 ],
 "description": " Validates the core module"
 },
 " SAEF_AS_fnc_CuratorHint": {
 "prefix": " SAEF_AS_fnc_CuratorHint",
 "body": [
-"[${0:_message}] spawn  SAEF_AS_fnc_CuratorHint;"
+"[_message] spawn  SAEF_AS_fnc_CuratorHint;"
 ],
 "description": " Allows a message to be hinted only to the curator (Zeus)"
 },
 " SAEF_AS_fnc_EvaluateAiCount": {
 "prefix": " SAEF_AS_fnc_EvaluateAiCount",
 "body": [
-"[${0:_target}] spawn  SAEF_AS_fnc_EvaluateAiCount;"
+"[_target] spawn  SAEF_AS_fnc_EvaluateAiCount;"
 ],
 "description": " Returns the number of local AI on a given target object"
 },
 " SAEF_AS_fnc_EvaluationParameter": {
 "prefix": " SAEF_AS_fnc_EvaluationParameter",
 "body": [
-"[${0:_function}] spawn  SAEF_AS_fnc_EvaluationParameter;"
+"[_function] spawn  SAEF_AS_fnc_EvaluationParameter;"
 ],
 "description": " Returns the index of the parameter we're interested in"
 },
@@ -191,7 +191,7 @@
 " SAEF_AS_fnc_GetSynchronizedObjects": {
 "prefix": " SAEF_AS_fnc_GetSynchronizedObjects",
 "body": [
-"[${0:_object}] spawn  SAEF_AS_fnc_GetSynchronizedObjects;"
+"[_object] spawn  SAEF_AS_fnc_GetSynchronizedObjects;"
 ],
 "description": " Gets synchronised objects and takes into account the 3DEN editor"
 },
@@ -205,7 +205,7 @@
 " SAEF_AS_fnc_HunterKiller": {
 "prefix": " SAEF_AS_fnc_HunterKiller",
 "body": [
-"[${0:_position\t\t\t\t\t\tPosition}, ${1:_unitVar\t\t\t\t\t\tVariable}, ${2:_sideVar\t\t\t\t\t\tVariable}, ${3:_count\t\t\t\t\t\t\tNumber}, ${4:_area\t\t\t\t\t\t\tSize}, ${5:_groupCode\t\t\t\t\t\tCode}, ${6:_respawnVariable\t\t\t\tVariable}, ${7:_paraVariable\t\t\t\tVariable}, ${8:_respawnTime\t\t\t\t\tHow}, ${9:_customScripts\t\t\t\tString}, ${10:_queueValidation\t\t\t\tCondition}, ${11:_customPositionTag\t\t\tTag}] spawn  SAEF_AS_fnc_HunterKiller;"
+"[_position\t\t\t\t\t\tPosition, _unitVar\t\t\t\t\t\tVariable, _sideVar\t\t\t\t\t\tVariable, _count\t\t\t\t\t\t\tNumber, _area\t\t\t\t\t\t\tSize, _groupCode\t\t\t\t\t\tCode, _respawnVariable\t\t\t\tVariable, _paraVariable\t\t\t\tVariable, _respawnTime\t\t\t\t\tHow, _customScripts\t\t\t\tString, _queueValidation\t\t\t\tCondition, _customPositionTag\t\t\tTag] spawn  SAEF_AS_fnc_HunterKiller;"
 ],
 "description": " Will create a Hunter Killer squad at the position specified based on the input parameters."
 },
@@ -219,161 +219,161 @@
 " SAEF_AS_fnc_ModuleSpawnArea": {
 "prefix": " SAEF_AS_fnc_ModuleSpawnArea",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}, ${3:_fromQueue}] spawn  SAEF_AS_fnc_ModuleSpawnArea;"
+"[_logic, _units, _activated, _fromQueue] spawn  SAEF_AS_fnc_ModuleSpawnArea;"
 ],
 "description": " Handles module functionality for spawn areas"
 },
 " SAEF_AS_fnc_ModuleSpawnAreaConfigCore": {
 "prefix": " SAEF_AS_fnc_ModuleSpawnAreaConfigCore",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}] spawn  SAEF_AS_fnc_ModuleSpawnAreaConfigCore;"
+"[_logic, _units, _activated] spawn  SAEF_AS_fnc_ModuleSpawnAreaConfigCore;"
 ],
 "description": " Handles module functionality for spawn areas"
 },
 " SAEF_AS_fnc_ModuleSpawnAreaVehicle": {
 "prefix": " SAEF_AS_fnc_ModuleSpawnAreaVehicle",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}, ${3:_fromQueue}] spawn  SAEF_AS_fnc_ModuleSpawnAreaVehicle;"
+"[_logic, _units, _activated, _fromQueue] spawn  SAEF_AS_fnc_ModuleSpawnAreaVehicle;"
 ],
 "description": " Handles module functionality for spawn areas"
 },
 " SAEF_AS_fnc_ModuleSpawnHunterKiller": {
 "prefix": " SAEF_AS_fnc_ModuleSpawnHunterKiller",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}, ${3:_fromQueue}] spawn  SAEF_AS_fnc_ModuleSpawnHunterKiller;"
+"[_logic, _units, _activated, _fromQueue] spawn  SAEF_AS_fnc_ModuleSpawnHunterKiller;"
 ],
 "description": " Handles module functionality for Hunter killer"
 },
 " SAEF_AS_fnc_ModuleSpawnHunterKillerPosition": {
 "prefix": " SAEF_AS_fnc_ModuleSpawnHunterKillerPosition",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}, ${3:_fromQueue}] spawn  SAEF_AS_fnc_ModuleSpawnHunterKillerPosition;"
+"[_logic, _units, _activated, _fromQueue] spawn  SAEF_AS_fnc_ModuleSpawnHunterKillerPosition;"
 ],
 "description": " Handles module functionality for hunter killer dynamic positions"
 },
 " SAEF_AS_fnc_Persistence": {
 "prefix": " SAEF_AS_fnc_Persistence",
 "body": [
-"[${0:_params\t\t\t\t\tParameters}, ${1:_groups\t\t\t\t\t\tGroups}, ${2:_script\t\t\t\t\t\tScript/Function}, ${3:_variable\t\t\t\t\tariable}, ${4:_range\t\t\t\t\t\tHow}, ${5:_position\t\t\t\t\tPosition}, ${6:_playerValidation\t\t\tCondition}, ${7:_queueValidation\t\t\t\tCondition}] spawn  SAEF_AS_fnc_Persistence;"
+"[_params\t\t\t\t\tParameters, _groups\t\t\t\t\t\tGroups, _script\t\t\t\t\t\tScript/Function, _variable\t\t\t\t\tariable, _range\t\t\t\t\t\tHow, _position\t\t\t\t\tPosition, _playerValidation\t\t\tCondition, _queueValidation\t\t\t\tCondition] spawn  SAEF_AS_fnc_Persistence;"
 ],
 "description": " Handles distance based persistence for all spawner types. It uses recursion to call it's handed script if needed."
 },
 " SAEF_AS_fnc_Radius": {
 "prefix": " SAEF_AS_fnc_Radius",
 "body": [
-"[${0:_params\t\t\t\t\tParameters}, ${1:_script\t\t\t\t\t\tScript/Function}, ${2:_range\t\t\t\t\t\tHow}, ${3:_position\t\t\t\t\tPosition}, ${4:_playerValidation\t\t\tCondition}, ${5:_queueValidation\t\t\t\tCondition}] spawn  SAEF_AS_fnc_Radius;"
+"[_params\t\t\t\t\tParameters, _script\t\t\t\t\t\tScript/Function, _range\t\t\t\t\t\tHow, _position\t\t\t\t\tPosition, _playerValidation\t\t\tCondition, _queueValidation\t\t\t\tCondition] spawn  SAEF_AS_fnc_Radius;"
 ],
 "description": " Handles distance based persistence for all spawner types. It uses recursion to call it's handed script if needed."
 },
 " SAEF_AS_fnc_Recursive": {
 "prefix": " SAEF_AS_fnc_Recursive",
 "body": [
-"[${0:_params\t\t\t\t\tParameters}, ${1:_script\t\t\t\t\tScript/Function}, ${2:_range\t\t\t\t\t\tHow}, ${3:_position\t\t\t\t\tPosition}, ${4:_evalTime\t\t\t\t\tHow}, ${5:_queueValidation\t\t\tCondition}] spawn  SAEF_AS_fnc_Recursive;"
+"[_params\t\t\t\t\tParameters, _script\t\t\t\t\tScript/Function, _range\t\t\t\t\t\tHow, _position\t\t\t\t\tPosition, _evalTime\t\t\t\t\tHow, _queueValidation\t\t\tCondition] spawn  SAEF_AS_fnc_Recursive;"
 ],
 "description": " Handles persistence for all spawner types. It uses recursion to call it's handed script if needed."
 },
 " SAEF_AS_fnc_Spawner": {
 "prefix": " SAEF_AS_fnc_Spawner",
 "body": [
-"[${0:_marker\"\t\t\t\t\t\tMarker}, ${1:_type\"\t\t\t\t\t\tType}, ${2:_unitVar\"\t\t\t\t\tVariable}, ${3:_sideVar\"\t\t\t\t\tVariable}, ${4:_count\"\t\t\t\t\t\t\tNumber}, ${5:_secondaryMarker\"\t\t\tMarker}, ${6:_area\"\t\t\t\t\t\t\tSize}, ${7:_range\"\t\t\t\t\t\tRange}, ${8:_groupCode\"\t\t\t\t\tCode}, ${9:_radiusSpawn\"\t\t\t\t\tWhether}, ${10:_persistenceVariable\t\tVariable}, ${11:_playerValidation\t\t\t\tCondition}, ${12:_customScripts\t\t\t\tString}, ${13:_queueValidation\t\t\t\tCondition}] spawn  SAEF_AS_fnc_Spawner;"
+"[_marker\"\t\t\t\t\t\tMarker, _type\"\t\t\t\t\t\tType, _unitVar\"\t\t\t\t\tVariable, _sideVar\"\t\t\t\t\tVariable, _count\"\t\t\t\t\t\t\tNumber, _secondaryMarker\"\t\t\tMarker, _area\"\t\t\t\t\t\t\tSize, _range\"\t\t\t\t\t\tRange, _groupCode\"\t\t\t\t\tCode, _radiusSpawn\"\t\t\t\t\tWhether, _persistenceVariable\t\tVariable, _playerValidation\t\t\t\tCondition, _customScripts\t\t\t\tString, _queueValidation\t\t\t\tCondition] spawn  SAEF_AS_fnc_Spawner;"
 ],
 "description": " Handles persistence for all spawner types. It uses recursion to call it's handed script if needed."
 },
 " SAEF_AS_fnc_UpdateAiCount": {
 "prefix": " SAEF_AS_fnc_UpdateAiCount",
 "body": [
-"[${0:_target}, ${1:_updateCount}, ${2:_addition}] spawn  SAEF_AS_fnc_UpdateAiCount;"
+"[_target, _updateCount, _addition] spawn  SAEF_AS_fnc_UpdateAiCount;"
 ],
 "description": " Updates the staged AI count so that we don't accidentally offload all AI to one headless"
 },
 " SAEF_AS_fnc_UpdateAiCount_Remote": {
 "prefix": " SAEF_AS_fnc_UpdateAiCount_Remote",
 "body": [
-"[${0:_clientId}, ${1:_count}] spawn  SAEF_AS_fnc_UpdateAiCount_Remote;"
+"[_clientId, _count] spawn  SAEF_AS_fnc_UpdateAiCount_Remote;"
 ],
 "description": " Returns the object for our current owner id (specifically for headless clients)"
 },
 " SAEF_AS_fnc_Variable": {
 "prefix": " SAEF_AS_fnc_Variable",
 "body": [
-"[${0:_params}, ${1:_script}, ${2:_variable}, ${3:_queueValidation}] spawn  SAEF_AS_fnc_Variable;"
+"[_params, _script, _variable, _queueValidation] spawn  SAEF_AS_fnc_Variable;"
 ],
 "description": " Holds spawn of certain units until a variable is set."
 },
 " RS_BC_fnc_DeadBodyCleanUpPersitent": {
 "prefix": " RS_BC_fnc_DeadBodyCleanUpPersitent",
 "body": [
-"[${0:_bodyLimit}, ${1:_checkInterval}, ${2:_instCleanDist}] spawn  RS_BC_fnc_DeadBodyCleanUpPersitent;"
+"[_bodyLimit, _checkInterval, _instCleanDist] spawn  RS_BC_fnc_DeadBodyCleanUpPersitent;"
 ],
 "description": " Cleans up dead bodies continuosly until switch off. Should prioritise dead bodies further away."
 },
 " RS_BC_fnc_GetOrderedDeadArray": {
 "prefix": " RS_BC_fnc_GetOrderedDeadArray",
 "body": [
-"[${0:_closestDistance}] spawn  RS_BC_fnc_GetOrderedDeadArray;"
+"[_closestDistance] spawn  RS_BC_fnc_GetOrderedDeadArray;"
 ],
 "description": " Returns an array of allDeadMen ordered by their distance from the player"
 },
 " RS_CP_fnc_AddCustomLocations": {
 "prefix": " RS_CP_fnc_AddCustomLocations",
 "body": [
-"[${0:_customLocationString}] spawn  RS_CP_fnc_AddCustomLocations;"
+"[_customLocationString] spawn  RS_CP_fnc_AddCustomLocations;"
 ],
 "description": " Creates any custom locations before Civilian Presence needs them"
 },
 " RS_CP_fnc_CheckAgainstTotalRunningAi": {
 "prefix": " RS_CP_fnc_CheckAgainstTotalRunningAi",
 "body": [
-"[${0:_side}, ${1:_count}] spawn  RS_CP_fnc_CheckAgainstTotalRunningAi;"
+"[_side, _count] spawn  RS_CP_fnc_CheckAgainstTotalRunningAi;"
 ],
 "description": " Takes a side and number and returns whether more or that side than the number exists"
 },
 " RS_CP_fnc_CorecreateUnit": {
 "prefix": " RS_CP_fnc_CorecreateUnit",
 "body": [
-"[${0:_module}, ${1:_pos}] spawn  RS_CP_fnc_CorecreateUnit;"
+"[_module, _pos] spawn  RS_CP_fnc_CorecreateUnit;"
 ],
 "description": " Handles the creation of units for civilian presence"
 },
 " RS_CP_fnc_CoreDeactivation": {
 "prefix": " RS_CP_fnc_CoreDeactivation",
 "body": [
-"[${0:_moduleString}] spawn  RS_CP_fnc_CoreDeactivation;"
+"[_moduleString] spawn  RS_CP_fnc_CoreDeactivation;"
 ],
 "description": " Disables the civilian presence handler"
 },
 " RS_CP_fnc_CoreDeleteUnit": {
 "prefix": " RS_CP_fnc_CoreDeleteUnit",
 "body": [
-"[${0:_module}, ${1:_unit}] spawn  RS_CP_fnc_CoreDeleteUnit;"
+"[_module, _unit] spawn  RS_CP_fnc_CoreDeleteUnit;"
 ],
 "description": " Attempts to delete a given unit"
 },
 " RS_CP_fnc_CoreGetobjects": {
 "prefix": " RS_CP_fnc_CoreGetobjects",
 "body": [
-"[${0:_module}, ${1:_objectType}] spawn  RS_CP_fnc_CoreGetobjects;"
+"[_module, _objectType] spawn  RS_CP_fnc_CoreGetobjects;"
 ],
 "description": " Returns linked objects"
 },
 " RS_CP_fnc_CoreHandleUnits": {
 "prefix": " RS_CP_fnc_CoreHandleUnits",
 "body": [
-"[${0:_module}] spawn  RS_CP_fnc_CoreHandleUnits;"
+"[_module] spawn  RS_CP_fnc_CoreHandleUnits;"
 ],
 "description": " Monitor number of units and spawn / delete some as needed"
 },
 " RS_CP_fnc_CoreInit": {
 "prefix": " RS_CP_fnc_CoreInit",
 "body": [
-"[${0:_moduleString}, ${1:_activated}] spawn  RS_CP_fnc_CoreInit;"
+"[_moduleString, _activated] spawn  RS_CP_fnc_CoreInit;"
 ],
 "description": " Handles the civilian Presence initialisation"
 },
 " RS_CP_fnc_DelayedCreation": {
 "prefix": " RS_CP_fnc_DelayedCreation",
 "body": [
-"[${0:_locationPos}, ${1:_debug}, ${2:_createdCode}, ${3:_deletedCode}, ${4:_useAgents}, ${5:_usePanicMode}, ${6:_whiteList}, ${7:_unitTypes}] spawn  RS_CP_fnc_DelayedCreation;"
+"[_locationPos, _debug, _createdCode, _deletedCode, _useAgents, _usePanicMode, _whiteList, _unitTypes] spawn  RS_CP_fnc_DelayedCreation;"
 ],
 "description": " Holds creation of the civ presence zone until players are near it"
 },
@@ -387,28 +387,28 @@
 " RS_CP_fnc_GetCompatibleFacesFromConfig": {
 "prefix": " RS_CP_fnc_GetCompatibleFacesFromConfig",
 "body": [
-"[${0:_unit}, ${1:_class}] spawn  RS_CP_fnc_GetCompatibleFacesFromConfig;"
+"[_unit, _class] spawn  RS_CP_fnc_GetCompatibleFacesFromConfig;"
 ],
 "description": " "
 },
 " RS_CP_fnc_GetPositionInfo": {
 "prefix": " RS_CP_fnc_GetPositionInfo",
 "body": [
-"[${0:_pos}, ${1:_locations}, ${2:_supportedLocations}] spawn  RS_CP_fnc_GetPositionInfo;"
+"[_pos, _locations, _supportedLocations] spawn  RS_CP_fnc_GetPositionInfo;"
 ],
 "description": " Gets position information about the location"
 },
 " RS_CP_fnc_GetWhiteListedLocations": {
 "prefix": " RS_CP_fnc_GetWhiteListedLocations",
 "body": [
-"[${0:_whiteList}] spawn  RS_CP_fnc_GetWhiteListedLocations;"
+"[_whiteList] spawn  RS_CP_fnc_GetWhiteListedLocations;"
 ],
 "description": " Gets all whitelisted locations"
 },
 " RS_CP_fnc_Handler": {
 "prefix": " RS_CP_fnc_Handler",
 "body": [
-"[${0:_debug}, ${1:_createdCode}, ${2:_deletedCode}, ${3:_useAgents}, ${4:_usePanicMode}] spawn  RS_CP_fnc_Handler;"
+"[_debug, _createdCode, _deletedCode, _useAgents, _usePanicMode] spawn  RS_CP_fnc_Handler;"
 ],
 "description": " Handles creation of Civilian Presence Modules"
 },
@@ -436,56 +436,56 @@
 " RS_CP_fnc_SpawnPositionModule": {
 "prefix": " RS_CP_fnc_SpawnPositionModule",
 "body": [
-"[${0:_pos}, ${1:_group}] spawn  RS_CP_fnc_SpawnPositionModule;"
+"[_pos, _group] spawn  RS_CP_fnc_SpawnPositionModule;"
 ],
 "description": " Handles creation of the Civilian Presence Spawn Point"
 },
 " RS_CP_fnc_SpawnPresenceModule": {
 "prefix": " RS_CP_fnc_SpawnPresenceModule",
 "body": [
-"[${0:_location\t\tlocation}, ${1:_debug}, ${2:_createdCode}, ${3:_deletedCode}, ${4:_useAgents}, ${5:_usePanicMode}] spawn  RS_CP_fnc_SpawnPresenceModule;"
+"[_location\t\tlocation, _debug, _createdCode, _deletedCode, _useAgents, _usePanicMode] spawn  RS_CP_fnc_SpawnPresenceModule;"
 ],
 "description": " Handles creation of the Civilian Presence, Waypoints, and Safe Points"
 },
 " RS_CP_fnc_SpawnSafePointModule": {
 "prefix": " RS_CP_fnc_SpawnSafePointModule",
 "body": [
-"[${0:_pos\t\t\tposition}, ${1:_capacity}, ${2:_isTerminal}, ${3:_type}, ${4:_useBuiilding}] spawn  RS_CP_fnc_SpawnSafePointModule;"
+"[_pos\t\t\tposition, _capacity, _isTerminal, _type, _useBuiilding] spawn  RS_CP_fnc_SpawnSafePointModule;"
 ],
 "description": " Handles creation of the Civilian Presence Safe Point"
 },
 " RS_CP_fnc_UnitInit": {
 "prefix": " RS_CP_fnc_UnitInit",
 "body": [
-"[${0:_unit}] spawn  RS_CP_fnc_UnitInit;"
+"[_unit] spawn  RS_CP_fnc_UnitInit;"
 ],
 "description": " Handles post Civi creation scripts"
 },
 " RS_CP_fnc_UnitTypeHandler": {
 "prefix": " RS_CP_fnc_UnitTypeHandler",
 "body": [
-"[${0:_unit}] spawn  RS_CP_fnc_UnitTypeHandler;"
+"[_unit] spawn  RS_CP_fnc_UnitTypeHandler;"
 ],
 "description": " Updates the unit type continuosly so that they can be changed mid-mission if necessary"
 },
 " SAEF_Detection_fnc_Burst": {
 "prefix": " SAEF_Detection_fnc_Burst",
 "body": [
-"[${0:_unit}] spawn  SAEF_Detection_fnc_Burst;"
+"[_unit] spawn  SAEF_Detection_fnc_Burst;"
 ],
 "description": " Handles burst detection - this occurs when a player fires their weapon"
 },
 " SAEF_Detection_fnc_EventHandler": {
 "prefix": " SAEF_Detection_fnc_EventHandler",
 "body": [
-"[${0:_detSide}, ${1:_envIflc}, ${2:_standVar}, ${3:_crouchVar}, ${4:_proneVar}, ${5:_condition}] spawn  SAEF_Detection_fnc_EventHandler;"
+"[_detSide, _envIflc, _standVar, _crouchVar, _proneVar, _condition] spawn  SAEF_Detection_fnc_EventHandler;"
 ],
 "description": " Initialises the Event Handler for Detection"
 },
 " SAEF_Detection_fnc_Handler": {
 "prefix": " SAEF_Detection_fnc_Handler",
 "body": [
-"[${0:_detSide}, ${1:_envIflc}, ${2:_standVar}, ${3:_crouchVar}, ${4:_proneVar}, ${5:_condition}] spawn  SAEF_Detection_fnc_Handler;"
+"[_detSide, _envIflc, _standVar, _crouchVar, _proneVar, _condition] spawn  SAEF_Detection_fnc_Handler;"
 ],
 "description": " Handles the detection radius and conditions"
 },
@@ -499,7 +499,7 @@
 " RS_DIAG_fnc_GetGlobalVariableWithDefault": {
 "prefix": " RS_DIAG_fnc_GetGlobalVariableWithDefault",
 "body": [
-"[${0:_variable}, ${1:_default}] spawn  RS_DIAG_fnc_GetGlobalVariableWithDefault;"
+"[_variable, _default] spawn  RS_DIAG_fnc_GetGlobalVariableWithDefault;"
 ],
 "description": " Takes a global variable and a default value and if the global variable is not set return the default"
 },
@@ -513,77 +513,77 @@
 " RS_fnc_loggingHelper": {
 "prefix": " RS_fnc_loggingHelper",
 "body": [
-"[${0:_tag\"\t\t\tThe}, ${1:_level\"\t\t\tThe}, ${2:_message\"\t\tThe}, ${3:_onServer\"\t\tDo}] spawn  RS_fnc_loggingHelper;"
+"[_tag\"\t\t\tThe, _level\"\t\t\tThe, _message\"\t\tThe, _onServer\"\t\tDo] spawn  RS_fnc_loggingHelper;"
 ],
 "description": " Assists with logging"
 },
 " RS_DIAG_fnc_PersistentPerformanceCheck": {
 "prefix": " RS_DIAG_fnc_PersistentPerformanceCheck",
 "body": [
-"[${0:_time}] spawn  RS_DIAG_fnc_PersistentPerformanceCheck;"
+"[_time] spawn  RS_DIAG_fnc_PersistentPerformanceCheck;"
 ],
 "description": " A script that persitently logs server performance, it displays AI unit numbers, player numbers, and server fps."
 },
 " [?]": {
 "prefix": " [?]",
 "body": [
-"[${0:_time}, ${1:_threshold}] spawn  [?];"
+"[_time, _threshold] spawn  [?];"
 ],
 "description": " A script that persitently logs server performance if it is below a certain threshold."
 },
 " RS_DS_fnc_AddGroupToZeus": {
 "prefix": " RS_DS_fnc_AddGroupToZeus",
 "body": [
-"[${0:_group}] spawn  RS_DS_fnc_AddGroupToZeus;"
+"[_group] spawn  RS_DS_fnc_AddGroupToZeus;"
 ],
 "description": " Adds given group to zeus, should be executed in server locality"
 },
 " RS_DS_fnc_DynaSpawn": {
 "prefix": " RS_DS_fnc_DynaSpawn",
 "body": [
-"[${0:_group}] spawn  RS_DS_fnc_DynaSpawn;"
+"[_group] spawn  RS_DS_fnc_DynaSpawn;"
 ],
 "description": " This is a function built for making AI spawns as simple as possible, also handles basic waypoint creation with some added functionality."
 },
 " RS_DS_fnc_DynaSpawnValidation": {
 "prefix": " RS_DS_fnc_DynaSpawnValidation",
 "body": [
-"[${0:_spawnPos}, ${1:_secondPos}, ${2:_type}, ${3:_faction}, ${4:_facSide}, ${5:_areaOfOperation}] spawn  RS_DS_fnc_DynaSpawnValidation;"
+"[_spawnPos, _secondPos, _type, _faction, _facSide, _areaOfOperation] spawn  RS_DS_fnc_DynaSpawnValidation;"
 ],
 "description": " Handles validation of input variables for DynaSpawn\t"
 },
 " RS_DS_fnc_DynamicGarrison": {
 "prefix": " RS_DS_fnc_DynamicGarrison",
 "body": [
-"[${0:_unit}] spawn  RS_DS_fnc_DynamicGarrison;"
+"[_unit] spawn  RS_DS_fnc_DynamicGarrison;"
 ],
 "description": " Holds the units until players get close, at which point they break the garrison and chase down the players"
 },
 " RS_DS_fnc_DynamicGarrisonHandler": {
 "prefix": " RS_DS_fnc_DynamicGarrisonHandler",
 "body": [
-"[${0:_group}] spawn  RS_DS_fnc_DynamicGarrisonHandler;"
+"[_group] spawn  RS_DS_fnc_DynamicGarrisonHandler;"
 ],
 "description": " Handles distribution of Dynamic Garrison to the group members"
 },
 " RS_DS_fnc_Garrison": {
 "prefix": " RS_DS_fnc_Garrison",
 "body": [
-"[${0:_pos}, ${1:_rad}, ${2:_group}] spawn  RS_DS_fnc_Garrison;"
+"[_pos, _rad, _group] spawn  RS_DS_fnc_Garrison;"
 ],
 "description": " Garrisons Units in Building Positions in a given radius"
 },
 " RS_DS_fnc_GetClosePositionInBuilding": {
 "prefix": " RS_DS_fnc_GetClosePositionInBuilding",
 "body": [
-"[${0:_position}] spawn  RS_DS_fnc_GetClosePositionInBuilding;"
+"[_position] spawn  RS_DS_fnc_GetClosePositionInBuilding;"
 ],
 "description": " Given a position returns the closest building position to that (if it's in a building)"
 },
 " RS_DS_fnc_GetGarrisonPositions": {
 "prefix": " RS_DS_fnc_GetGarrisonPositions",
 "body": [
-"[${0:_pos}, ${1:_rad}, ${2:_countGroup}] spawn  RS_DS_fnc_GetGarrisonPositions;"
+"[_pos, _rad, _countGroup] spawn  RS_DS_fnc_GetGarrisonPositions;"
 ],
 "description": " Returns an array of positions to garrison based on the given parameters"
 },
@@ -597,98 +597,98 @@
 " RS_DS_fnc_HunterKiller": {
 "prefix": " RS_DS_fnc_HunterKiller",
 "body": [
-"[${0:_groupHunt}, ${1:_areaOfOperation}, ${2:_usePara}, ${3:_secondPos}] spawn  RS_DS_fnc_HunterKiller;"
+"[_groupHunt, _areaOfOperation, _usePara, _secondPos] spawn  RS_DS_fnc_HunterKiller;"
 ],
 "description": " Uses a passed group and area of operation to create waypoints for AI that continously hunt the nearest player to them."
 },
 " RS_DS_fnc_ParaInsertion": {
 "prefix": " RS_DS_fnc_ParaInsertion",
 "body": [
-"[${0:_vehicle}, ${1:_spawnPos}, ${2:_azi}, ${3:_insertionPos}, ${4:_group}, ${5:_facSide}] spawn  RS_DS_fnc_ParaInsertion;"
+"[_vehicle, _spawnPos, _azi, _insertionPos, _group, _facSide] spawn  RS_DS_fnc_ParaInsertion;"
 ],
 "description": " This is a function built for deploying AI via Parachute Insertion"
 },
 " RS_DS_fnc_PositionValidation": {
 "prefix": " RS_DS_fnc_PositionValidation",
 "body": [
-"[${0:_var}] spawn  RS_DS_fnc_PositionValidation;"
+"[_var] spawn  RS_DS_fnc_PositionValidation;"
 ],
 "description": " Determines whether the variable passed is a Valid Marker or position"
 },
 " RS_DS_fnc_SpawnerGroup": {
 "prefix": " RS_DS_fnc_SpawnerGroup",
 "body": [
-"[${0:_spawnPos}, ${1:_facSide}, ${2:_faction}, ${3:_type}, ${4:_unitType}, ${5:_area}, ${6:_secondPos}, ${7:_remWeapAttach}, ${8:_azi}, ${9:_usePara}, ${10:_paraSpawn}, ${11:_group}] spawn  RS_DS_fnc_SpawnerGroup;"
+"[_spawnPos, _facSide, _faction, _type, _unitType, _area, _secondPos, _remWeapAttach, _azi, _usePara, _paraSpawn, _group] spawn  RS_DS_fnc_SpawnerGroup;"
 ],
 "description": " Handles the spawning of AI and waypoint creation for Dyna Spawn using the variables passed to it."
 },
 " RS_DS_fnc_TaskPatrol": {
 "prefix": " RS_DS_fnc_TaskPatrol",
 "body": [
-"[${0:_group}, ${1:_pos}, ${2:_area}, ${3:_allowWaterCreation}] spawn  RS_DS_fnc_TaskPatrol;"
+"[_group, _pos, _area, _allowWaterCreation] spawn  RS_DS_fnc_TaskPatrol;"
 ],
 "description": " Creates a patrol route for AI given a set of parameters"
 },
 " RS_DS_fnc_UnitValidation": {
 "prefix": " RS_DS_fnc_UnitValidation",
 "body": [
-"[${0:_var}] spawn  RS_DS_fnc_UnitValidation;"
+"[_var] spawn  RS_DS_fnc_UnitValidation;"
 ],
 "description": " Determines whether the variable passed is a Valid Group or Vehicle"
 },
 " RS_fnc_ExecScriptHandler": {
 "prefix": " RS_fnc_ExecScriptHandler",
 "body": [
-"[${0:_params}, ${1:_script}, ${2:_exec}, ${3:_target}] spawn  RS_fnc_ExecScriptHandler;"
+"[_params, _script, _exec, _target] spawn  RS_fnc_ExecScriptHandler;"
 ],
 "description": " Accepts a script string and then does some validation to determine if a headless client is active, if the headless client is active, execute on the headless client, otherwise it is executed on the server."
 },
 " RS_fnc_TransferOwnershipToHeadless": {
 "prefix": " RS_fnc_TransferOwnershipToHeadless",
 "body": [
-"[${0:_arrayOfObjects}] spawn  RS_fnc_TransferOwnershipToHeadless;"
+"[_arrayOfObjects] spawn  RS_fnc_TransferOwnershipToHeadless;"
 ],
 "description": " Transfers ownership of given objects to the Headless client if the Headless client is present"
 },
 " RS_INS_fnc_AddWeapons": {
 "prefix": " RS_INS_fnc_AddWeapons",
 "body": [
-"[${0:_unit}] spawn  RS_INS_fnc_AddWeapons;"
+"[_unit] spawn  RS_INS_fnc_AddWeapons;"
 ],
 "description": " Adds weapons to the backpacks of the civilian insurgents."
 },
 " RS_INS_fnc_CreateInsurgencyPoint": {
 "prefix": " RS_INS_fnc_CreateInsurgencyPoint",
 "body": [
-"[${0:_loc}, ${1:_enableIEDs}] spawn  RS_INS_fnc_CreateInsurgencyPoint;"
+"[_loc, _enableIEDs] spawn  RS_INS_fnc_CreateInsurgencyPoint;"
 ],
 "description": " Code Executed from inside the InsurgencyHandler Triggers"
 },
 " RS_INS_fnc_InsurgencyHandler": {
 "prefix": " RS_INS_fnc_InsurgencyHandler",
 "body": [
-"[${0:_enableIEDs}, ${1:_enableChcs}] spawn  RS_INS_fnc_InsurgencyHandler;"
+"[_enableIEDs, _enableChcs] spawn  RS_INS_fnc_InsurgencyHandler;"
 ],
 "description": " Controls creation of insurgency zones and preps unit spawners"
 },
 " RS_INS_fnc_PlaceIeds": {
 "prefix": " RS_INS_fnc_PlaceIeds",
 "body": [
-"[${0:_pos}, ${1:_rad}] spawn  RS_INS_fnc_PlaceIeds;"
+"[_pos, _rad] spawn  RS_INS_fnc_PlaceIeds;"
 ],
 "description": " Places Ieds on roads in a given radius."
 },
 " RS_INS_fnc_SpawnInsurgent": {
 "prefix": " RS_INS_fnc_SpawnInsurgent",
 "body": [
-"[${0:_loc}, ${1:_pos}, ${2:_rad}, ${3:_class}, ${4:_loadout}] spawn  RS_INS_fnc_SpawnInsurgent;"
+"[_loc, _pos, _rad, _class, _loadout] spawn  RS_INS_fnc_SpawnInsurgent;"
 ],
 "description": " Spawns an Insurgent at given location"
 },
 " RS_INS_fnc_SpawnInsurgents": {
 "prefix": " RS_INS_fnc_SpawnInsurgents",
 "body": [
-"[${0:_pos}, ${1:_rad}, ${2:_cnt}, ${3:_cls}, ${4:_ldt}] spawn  RS_INS_fnc_SpawnInsurgents;"
+"[_pos, _rad, _cnt, _cls, _ldt] spawn  RS_INS_fnc_SpawnInsurgents;"
 ],
 "description": " Spawns Insurgents within a given area"
 },
@@ -702,21 +702,21 @@
 " RS_INS_fnc_SwitchToInsurgent_Individual": {
 "prefix": " RS_INS_fnc_SwitchToInsurgent_Individual",
 "body": [
-"[${0:_unit}] spawn  RS_INS_fnc_SwitchToInsurgent_Individual;"
+"[_unit] spawn  RS_INS_fnc_SwitchToInsurgent_Individual;"
 ],
 "description": " Spawns Insurgents within a given area"
 },
 " RS_INV_fnc_Client_AddDropAction": {
 "prefix": " RS_INV_fnc_Client_AddDropAction",
 "body": [
-"[${0:_object}] spawn  RS_INV_fnc_Client_AddDropAction;"
+"[_object] spawn  RS_INV_fnc_Client_AddDropAction;"
 ],
 "description": " Adds the action to kick off the aircraft boarding process"
 },
 " RS_INV_fnc_Client_Flak": {
 "prefix": " RS_INV_fnc_Client_Flak",
 "body": [
-"[${0:_unit}] spawn  RS_INV_fnc_Client_Flak;"
+"[_unit] spawn  RS_INV_fnc_Client_Flak;"
 ],
 "description": " Handles the creation of clientside flak for the Jump"
 },
@@ -730,63 +730,63 @@
 " RS_INV_fnc_Client_JumpMoveToDoor": {
 "prefix": " RS_INV_fnc_Client_JumpMoveToDoor",
 "body": [
-"[${0:_plane}, ${1:_unit}] spawn  RS_INV_fnc_Client_JumpMoveToDoor;"
+"[_plane, _unit] spawn  RS_INV_fnc_Client_JumpMoveToDoor;"
 ],
 "description": " Handles the clientside portion of the invasion process"
 },
 " RS_INV_fnc_Client_JumpMoveToJumpMaster": {
 "prefix": " RS_INV_fnc_Client_JumpMoveToJumpMaster",
 "body": [
-"[${0:_plane}, ${1:_unit}] spawn  RS_INV_fnc_Client_JumpMoveToJumpMaster;"
+"[_plane, _unit] spawn  RS_INV_fnc_Client_JumpMoveToJumpMaster;"
 ],
 "description": " Moves the unit to the jump master position in the plane"
 },
 " RS_INV_fnc_Client_JumpMoveToStand": {
 "prefix": " RS_INV_fnc_Client_JumpMoveToStand",
 "body": [
-"[${0:_plane}, ${1:_unit}] spawn  RS_INV_fnc_Client_JumpMoveToStand;"
+"[_plane, _unit] spawn  RS_INV_fnc_Client_JumpMoveToStand;"
 ],
 "description": " Stands the unit up in the plane"
 },
 " RS_INV_fnc_Client_MisDropItems": {
 "prefix": " RS_INV_fnc_Client_MisDropItems",
 "body": [
-"[${0:_unit}] spawn  RS_INV_fnc_Client_MisDropItems;"
+"[_unit] spawn  RS_INV_fnc_Client_MisDropItems;"
 ],
 "description": " Removes a random important item from the player's inventory"
 },
 " RS_INV_fnc_Client_MountPlayer": {
 "prefix": " RS_INV_fnc_Client_MountPlayer",
 "body": [
-"[${0:_functionLockVariable}] spawn  RS_INV_fnc_Client_MountPlayer;"
+"[_functionLockVariable] spawn  RS_INV_fnc_Client_MountPlayer;"
 ],
 "description": " Handles the spawning of the plane, and assigning units to the plane."
 },
 " RS_INV_fnc_Client_MoveIn": {
 "prefix": " RS_INV_fnc_Client_MoveIn",
 "body": [
-"[${0:_type}, ${1:_unit}, ${2:_scripts}] spawn  RS_INV_fnc_Client_MoveIn;"
+"[_type, _unit, _scripts] spawn  RS_INV_fnc_Client_MoveIn;"
 ],
 "description": " Moves the unit into the plane"
 },
 " RS_INV_fnc_Client_PlayerParaTouchDown": {
 "prefix": " RS_INV_fnc_Client_PlayerParaTouchDown",
 "body": [
-"[${0:_unit}, ${1:_para}] spawn  RS_INV_fnc_Client_PlayerParaTouchDown;"
+"[_unit, _para] spawn  RS_INV_fnc_Client_PlayerParaTouchDown;"
 ],
 "description": " Handles the parachute landing"
 },
 " RS_INV_fnc_Client_RemoteParaPlane": {
 "prefix": " RS_INV_fnc_Client_RemoteParaPlane",
 "body": [
-"[${0:_unit}, ${1:_type}] spawn  RS_INV_fnc_Client_RemoteParaPlane;"
+"[_unit, _type] spawn  RS_INV_fnc_Client_RemoteParaPlane;"
 ],
 "description": " Remote execution handler for player interactions within the plane"
 },
 " RS_INV_fnc_Client_Reset": {
 "prefix": " RS_INV_fnc_Client_Reset",
 "body": [
-"[${0:_plane}] spawn  RS_INV_fnc_Client_Reset;"
+"[_plane] spawn  RS_INV_fnc_Client_Reset;"
 ],
 "description": " Handles the clientside portion of the invasion process"
 },
@@ -800,28 +800,28 @@
 " RS_INV_fnc_Server_AAFire": {
 "prefix": " RS_INV_fnc_Server_AAFire",
 "body": [
-"[${0:_unit}, ${1:_phaseVar}, ${2:_doFire}] spawn  RS_INV_fnc_Server_AAFire;"
+"[_unit, _phaseVar, _doFire] spawn  RS_INV_fnc_Server_AAFire;"
 ],
 "description": " Forces AA guns to fire/look into the Sky"
 },
 " RS_INV_fnc_Server_AAGuns": {
 "prefix": " RS_INV_fnc_Server_AAGuns",
 "body": [
-"[${0:_gunArray}, ${1:_gunFireVariable}] spawn  RS_INV_fnc_Server_AAGuns;"
+"[_gunArray, _gunFireVariable] spawn  RS_INV_fnc_Server_AAGuns;"
 ],
 "description": " Takes a list of given AA guns and sets them up to provide ambient fire"
 },
 " RS_INV_fnc_Server_AmbientAirDrop": {
 "prefix": " RS_INV_fnc_Server_AmbientAirDrop",
 "body": [
-"[${0:_planeCount}, ${1:_phaseVar}] spawn  RS_INV_fnc_Server_AmbientAirDrop;"
+"[_planeCount, _phaseVar] spawn  RS_INV_fnc_Server_AmbientAirDrop;"
 ],
 "description": " Creates the supplied number of planes that fly over the drop zone to drop empty parachutes."
 },
 " RS_INV_fnc_Server_AmbientAirDropPara": {
 "prefix": " RS_INV_fnc_Server_AmbientAirDropPara",
 "body": [
-"[${0:_plane}, ${1:_position}] spawn  RS_INV_fnc_Server_AmbientAirDropPara;"
+"[_plane, _position] spawn  RS_INV_fnc_Server_AmbientAirDropPara;"
 ],
 "description": " Spawns the parachutes for the Ambient Air Drop Process"
 },
@@ -835,98 +835,98 @@
 " RS_INV_fnc_Server_ParaDelete": {
 "prefix": " RS_INV_fnc_Server_ParaDelete",
 "body": [
-"[${0:_para}] spawn  RS_INV_fnc_Server_ParaDelete;"
+"[_para] spawn  RS_INV_fnc_Server_ParaDelete;"
 ],
 "description": " Deletes the given parachute when it gets close to the ground"
 },
 " RS_INV_fnc_Server_PlaneCleanup": {
 "prefix": " RS_INV_fnc_Server_PlaneCleanup",
 "body": [
-"[${0:_plane}, ${1:_position}] spawn  RS_INV_fnc_Server_PlaneCleanup;"
+"[_plane, _position] spawn  RS_INV_fnc_Server_PlaneCleanup;"
 ],
 "description": " Cleans up the plane when it gets to the end position"
 },
 " RS_INV_fnc_Server_PlaneLights": {
 "prefix": " RS_INV_fnc_Server_PlaneLights",
 "body": [
-"[${0:_plane}, ${1:_type}] spawn  RS_INV_fnc_Server_PlaneLights;"
+"[_plane, _type] spawn  RS_INV_fnc_Server_PlaneLights;"
 ],
 "description": " Sets the light of the plane based on given inputs"
 },
 " RS_INV_fnc_Server_PlanePosDebug": {
 "prefix": " RS_INV_fnc_Server_PlanePosDebug",
 "body": [
-"[${0:_plane}, ${1:_position}, ${2:_direction}, ${3:_cleanupPosition}] spawn  RS_INV_fnc_Server_PlanePosDebug;"
+"[_plane, _position, _direction, _cleanupPosition] spawn  RS_INV_fnc_Server_PlanePosDebug;"
 ],
 "description": " If the plane does something strange, reset its position"
 },
 " RS_INV_fnc_Server_PlayerAirDrop": {
 "prefix": " RS_INV_fnc_Server_PlayerAirDrop",
 "body": [
-"[${0:_plane}, ${1:_position}] spawn  RS_INV_fnc_Server_PlayerAirDrop;"
+"[_plane, _position] spawn  RS_INV_fnc_Server_PlayerAirDrop;"
 ],
 "description": " Handles the player air drop component of the para drop"
 },
 " RS_INV_fnc_Server_SpawnExtraAI": {
 "prefix": " RS_INV_fnc_Server_SpawnExtraAI",
 "body": [
-"[${0:_plane}] spawn  RS_INV_fnc_Server_SpawnExtraAI;"
+"[_plane] spawn  RS_INV_fnc_Server_SpawnExtraAI;"
 ],
 "description": " Spawns some extra AI to populate the planes (makes them feel less empty)"
 },
 " RS_INV_fnc_Server_SpawnPlane": {
 "prefix": " RS_INV_fnc_Server_SpawnPlane",
 "body": [
-"[${0:_strPos}, ${1:_endPos}, ${2:_drpPos}, ${3:_newPlane}] spawn  RS_INV_fnc_Server_SpawnPlane;"
+"[_strPos, _endPos, _drpPos, _newPlane] spawn  RS_INV_fnc_Server_SpawnPlane;"
 ],
 "description": " Spawns the plane we need to conduct the air drops"
 },
 " RS_INV_fnc_Server_WatchCargoNumber": {
 "prefix": " RS_INV_fnc_Server_WatchCargoNumber",
 "body": [
-"[${0:_plane}] spawn  RS_INV_fnc_Server_WatchCargoNumber;"
+"[_plane] spawn  RS_INV_fnc_Server_WatchCargoNumber;"
 ],
 "description": " Watches the Cargo Number of the planes, if it exceeds x players, the plane is no longer allowed to carry players"
 },
 " RS_LD_fnc_AddBalancedItems": {
 "prefix": " RS_LD_fnc_AddBalancedItems",
 "body": [
-"[${0:_unit}, ${1:_type}, ${2:_items}, ${3:_count}] spawn  RS_LD_fnc_AddBalancedItems;"
+"[_unit, _type, _items, _count] spawn  RS_LD_fnc_AddBalancedItems;"
 ],
 "description": " Takes the given items and tries to add them evenly into the inventory based on the given cap"
 },
 " RS_LD_fnc_AddGearItem": {
 "prefix": " RS_LD_fnc_AddGearItem",
 "body": [
-"[${0:_unit}, ${1:_type}, ${2:_gearItem}, ${3:_randomisationTag}] spawn  RS_LD_fnc_AddGearItem;"
+"[_unit, _type, _gearItem, _randomisationTag] spawn  RS_LD_fnc_AddGearItem;"
 ],
 "description": " Adds the given gear item to the unit with optional randomisation inclusion, will also filter out any unowned DLC"
 },
 " RS_LD_fnc_AddToRandomisationPool": {
 "prefix": " RS_LD_fnc_AddToRandomisationPool",
 "body": [
-"[${0:_gearItem}, ${1:_randomisationTag}] spawn  RS_LD_fnc_AddToRandomisationPool;"
+"[_gearItem, _randomisationTag] spawn  RS_LD_fnc_AddToRandomisationPool;"
 ],
 "description": " Adds to the randomisation pool for the specified tag"
 },
 " RS_LD_fnc_ApplyLoadout": {
 "prefix": " RS_LD_fnc_ApplyLoadout",
 "body": [
-"[${0:_unit}, ${1:_loadout}, ${2:_additionalParameters}, ${3:}] spawn  RS_LD_fnc_ApplyLoadout;"
+"[_unit, _loadout, _additionalParameters, ] spawn  RS_LD_fnc_ApplyLoadout;"
 ],
 "description": " Handles added complexity when applying the loadout so that the user doesn't need to"
 },
 " RS_LD_fnc_FilterGearPool": {
 "prefix": " RS_LD_fnc_FilterGearPool",
 "body": [
-"[${0:_randomGearPool}] spawn  RS_LD_fnc_FilterGearPool;"
+"[_randomGearPool] spawn  RS_LD_fnc_FilterGearPool;"
 ],
 "description": " Filters the gear pool based on DLC that the user owns"
 },
 " RS_LD_fnc_GetItemManipulationCode": {
 "prefix": " RS_LD_fnc_GetItemManipulationCode",
 "body": [
-"[${0:_type}] spawn  RS_LD_fnc_GetItemManipulationCode;"
+"[_type] spawn  RS_LD_fnc_GetItemManipulationCode;"
 ],
 "description": " Will grab the item manipulation code"
 },
@@ -940,49 +940,49 @@
 " RS_LD_fnc_MedicalInfantry": {
 "prefix": " RS_LD_fnc_MedicalInfantry",
 "body": [
-"[${0:_unit}] spawn  RS_LD_fnc_MedicalInfantry;"
+"[_unit] spawn  RS_LD_fnc_MedicalInfantry;"
 ],
 "description": " Adds the basic medical items we frequently use to the player's uniform"
 },
 " RS_LD_fnc_MedicalMedic": {
 "prefix": " RS_LD_fnc_MedicalMedic",
 "body": [
-"[${0:_unit}, ${1:_isFirstAid}] spawn  RS_LD_fnc_MedicalMedic;"
+"[_unit, _isFirstAid] spawn  RS_LD_fnc_MedicalMedic;"
 ],
 "description": " Adds the basic medical items for medics that we frequently use to the player's backpack"
 },
 " RS_LD_fnc_RemoveExistingItems": {
 "prefix": " RS_LD_fnc_RemoveExistingItems",
 "body": [
-"[${0:_unit}] spawn  RS_LD_fnc_RemoveExistingItems;"
+"[_unit] spawn  RS_LD_fnc_RemoveExistingItems;"
 ],
 "description": " Will remove all existing items ahead of the rest of the loadout being applied"
 },
 " RS_LD_fnc_ReplaceMissingRadio": {
 "prefix": " RS_LD_fnc_ReplaceMissingRadio",
 "body": [
-"[${0:_unit}, ${1:_radio}, ${2:_watchTime}] spawn  RS_LD_fnc_ReplaceMissingRadio;"
+"[_unit, _radio, _watchTime] spawn  RS_LD_fnc_ReplaceMissingRadio;"
 ],
 "description": " Watches the given units inventory for given (optional) amount of time, and if radio is replaced with a different radio, replaces that radio with the right one."
 },
 " RS_LD_fnc_StandardItems": {
 "prefix": " RS_LD_fnc_StandardItems",
 "body": [
-"[${0:_unit}, ${1:_excludeWatch}, ${2:_excludeMap}, ${3:_excludeCompass}, ${4:_excludeGPS}, ${5:_excludeRadio}, ${6:_itemOverrides}, ${7:_watchRadioHelper}] spawn  RS_LD_fnc_StandardItems;"
+"[_unit, _excludeWatch, _excludeMap, _excludeCompass, _excludeGPS, _excludeRadio, _itemOverrides, _watchRadioHelper] spawn  RS_LD_fnc_StandardItems;"
 ],
 "description": " Adds the standard items that we commonly include in loadouts"
 },
 " RS_LD_fnc_TryAddItems": {
 "prefix": " RS_LD_fnc_TryAddItems",
 "body": [
-"[${0:_unit}, ${1:_type}, ${2:_itemArray}] spawn  RS_LD_fnc_TryAddItems;"
+"[_unit, _type, _itemArray] spawn  RS_LD_fnc_TryAddItems;"
 ],
 "description": " Will try add items to specified container, will log readable message if it fails"
 },
 " RS_LC_fnc_InBuilding": {
 "prefix": " RS_LC_fnc_InBuilding",
 "body": [
-"[${0:_position}] spawn  RS_LC_fnc_InBuilding;"
+"[_position] spawn  RS_LC_fnc_InBuilding;"
 ],
 "description": " Returns a boolean value and the building based on whether or not a passed position is inside a building"
 },
@@ -996,14 +996,14 @@
 " RS_MQ_fnc_CreateQueue": {
 "prefix": " RS_MQ_fnc_CreateQueue",
 "body": [
-"[${0:_queueName}, ${1:_target}, ${2:_serverFallback}, ${3:_distributedQueueEvaluationFunctions}] spawn  RS_MQ_fnc_CreateQueue;"
+"[_queueName, _target, _serverFallback, _distributedQueueEvaluationFunctions] spawn  RS_MQ_fnc_CreateQueue;"
 ],
 "description": " Safe way to initialise queues"
 },
 " RS_MQ_fnc_DistributedHandler": {
 "prefix": " RS_MQ_fnc_DistributedHandler",
 "body": [
-"[${0:_queueName}, ${1:_evaluationInformation}] spawn  RS_MQ_fnc_DistributedHandler;"
+"[_queueName, _evaluationInformation] spawn  RS_MQ_fnc_DistributedHandler;"
 ],
 "description": " Handles message distribution for execution on multiple clients"
 },
@@ -1017,28 +1017,28 @@
 " RS_MQ_fnc_MessageDequeue": {
 "prefix": " RS_MQ_fnc_MessageDequeue",
 "body": [
-"[${0:_messageId}, ${1:_params}, ${2:_script}, ${3:_queueName}, ${4:_validation}] spawn  RS_MQ_fnc_MessageDequeue;"
+"[_messageId, _params, _script, _queueName, _validation] spawn  RS_MQ_fnc_MessageDequeue;"
 ],
 "description": " Removes a message from the given queue"
 },
 " RS_MQ_fnc_MessageEnqueue": {
 "prefix": " RS_MQ_fnc_MessageEnqueue",
 "body": [
-"[${0:_queueName}, ${1:_params}, ${2:_script}, ${3:_validation}, ${4:_target}, ${5:_evaluationParameterIndex}, ${6:_updateFunction}] spawn  RS_MQ_fnc_MessageEnqueue;"
+"[_queueName, _params, _script, _validation, _target, _evaluationParameterIndex, _updateFunction] spawn  RS_MQ_fnc_MessageEnqueue;"
 ],
 "description": " Adds a message to the given queue"
 },
 " RS_MQ_fnc_MessageExecuter": {
 "prefix": " RS_MQ_fnc_MessageExecuter",
 "body": [
-"[${0:_messageId}, ${1:_params}, ${2:_script}, ${3:_queueName}, ${4:_validation}] spawn  RS_MQ_fnc_MessageExecuter;"
+"[_messageId, _params, _script, _queueName, _validation] spawn  RS_MQ_fnc_MessageExecuter;"
 ],
 "description": " Executes all given messages"
 },
 " RS_MQ_fnc_MessageHandler": {
 "prefix": " RS_MQ_fnc_MessageHandler",
 "body": [
-"[${0:_queueName}, ${1:_timeout}] spawn  RS_MQ_fnc_MessageHandler;"
+"[_queueName, _timeout] spawn  RS_MQ_fnc_MessageHandler;"
 ],
 "description": " Handles message execution"
 },
@@ -1059,21 +1059,21 @@
 " RS_PLYR_fnc_GetClosestPlayer": {
 "prefix": " RS_PLYR_fnc_GetClosestPlayer",
 "body": [
-"[${0:_position}, ${1:_rad}, ${2:_validation}] spawn  RS_PLYR_fnc_GetClosestPlayer;"
+"[_position, _rad, _validation] spawn  RS_PLYR_fnc_GetClosestPlayer;"
 ],
 "description": " Returns the closest player position within a given radius"
 },
 " RS_PLYR_fnc_GetClosestPlayerObject": {
 "prefix": " RS_PLYR_fnc_GetClosestPlayerObject",
 "body": [
-"[${0:_position}, ${1:_radius}, ${2:_playerValidation}] spawn  RS_PLYR_fnc_GetClosestPlayerObject;"
+"[_position, _radius, _playerValidation] spawn  RS_PLYR_fnc_GetClosestPlayerObject;"
 ],
 "description": " Returns the closest player object"
 },
 " RS_PLYR_fnc_GetMarkerNearPlayer": {
 "prefix": " RS_PLYR_fnc_GetMarkerNearPlayer",
 "body": [
-"[${0:_markerTag}, ${1:_maxSearchDistance}, ${2:_playerDistanceThreshold}] spawn  RS_PLYR_fnc_GetMarkerNearPlayer;"
+"[_markerTag, _maxSearchDistance, _playerDistanceThreshold] spawn  RS_PLYR_fnc_GetMarkerNearPlayer;"
 ],
 "description": " Locates a marker within certain thresholds based on a given tag"
 },
@@ -1094,7 +1094,7 @@
 " RS_Radiation_fnc_ChemicalDetector": {
 "prefix": " RS_Radiation_fnc_ChemicalDetector",
 "body": [
-"[${0:_markerList}, ${1:_size}, ${2:_unit}, ${3:_variable}] spawn  RS_Radiation_fnc_ChemicalDetector;"
+"[_markerList, _size, _unit, _variable] spawn  RS_Radiation_fnc_ChemicalDetector;"
 ],
 "description": " Handles the chemical detector's display value"
 },
@@ -1115,35 +1115,35 @@
 " RS_Radiation_fnc_GasMaskHandler": {
 "prefix": " RS_Radiation_fnc_GasMaskHandler",
 "body": [
-"[${0:_unit}] spawn  RS_Radiation_fnc_GasMaskHandler;"
+"[_unit] spawn  RS_Radiation_fnc_GasMaskHandler;"
 ],
 "description": " Handles hiding and showing of the gasmask"
 },
 " RS_Radiation_fnc_GasMaskSound": {
 "prefix": " RS_Radiation_fnc_GasMaskSound",
 "body": [
-"[${0:_unit}] spawn  RS_Radiation_fnc_GasMaskSound;"
+"[_unit] spawn  RS_Radiation_fnc_GasMaskSound;"
 ],
 "description": " Handles gasmask sounds"
 },
 " RS_Radiation_fnc_GetClosestMarker": {
 "prefix": " RS_Radiation_fnc_GetClosestMarker",
 "body": [
-"[${0:_markerList}, ${1:_size}] spawn  RS_Radiation_fnc_GetClosestMarker;"
+"[_markerList, _size] spawn  RS_Radiation_fnc_GetClosestMarker;"
 ],
 "description": " Returns the closest marker"
 },
 " RS_Radiation_fnc_GetGridInfo": {
 "prefix": " RS_Radiation_fnc_GetGridInfo",
 "body": [
-"[${0:_size}, ${1:_pos}] spawn  RS_Radiation_fnc_GetGridInfo;"
+"[_size, _pos] spawn  RS_Radiation_fnc_GetGridInfo;"
 ],
 "description": " Returns grids for mapping items"
 },
 " RS_Radiation_fnc_Handler": {
 "prefix": " RS_Radiation_fnc_Handler",
 "body": [
-"[${0:_markerList}, ${1:_size}, ${2:_unit}, ${3:_variable}] spawn  RS_Radiation_fnc_Handler;"
+"[_markerList, _size, _unit, _variable] spawn  RS_Radiation_fnc_Handler;"
 ],
 "description": " Handles the radiation"
 },
@@ -1164,7 +1164,7 @@
 " RS_Radiation_fnc_MarkerHandler": {
 "prefix": " RS_Radiation_fnc_MarkerHandler",
 "body": [
-"[${0:_unit}, ${1:_markerList}, ${2:_size}] spawn  RS_Radiation_fnc_MarkerHandler;"
+"[_unit, _markerList, _size] spawn  RS_Radiation_fnc_MarkerHandler;"
 ],
 "description": " Handles the showing/hiding of radiation zone markers"
 },
@@ -1192,21 +1192,21 @@
 " RS_fnc_Handler_TimedRespawn": {
 "prefix": " RS_fnc_Handler_TimedRespawn",
 "body": [
-"[${0:_waitTime}, ${1:_holdTime}] spawn  RS_fnc_Handler_TimedRespawn;"
+"[_waitTime, _holdTime] spawn  RS_fnc_Handler_TimedRespawn;"
 ],
 "description": " Handles the timed respawn functionality (i.e. Enable the respawn every x seconds)"
 },
 " RS_fnc_Handler_WaveRespawn": {
 "prefix": " RS_fnc_Handler_WaveRespawn",
 "body": [
-"[${0:_minTime}, ${1:_maxTime}, ${2:_holdTime}, ${3:_playerThresholdForRespawn}, ${4:_penaltyTime}, ${5:_classSpecificPenalties}] spawn  RS_fnc_Handler_WaveRespawn;"
+"[_minTime, _maxTime, _holdTime, _playerThresholdForRespawn, _penaltyTime, _classSpecificPenalties] spawn  RS_fnc_Handler_WaveRespawn;"
 ],
 "description": " Handles the wave respawn functionality, enables respawn after x players are dead or an absolute timeout is reached as well as takes into account certain penalty parameters"
 },
 " RS_fnc_Handler_WaveRespawn_PenaltyHandler": {
 "prefix": " RS_fnc_Handler_WaveRespawn_PenaltyHandler",
 "body": [
-"[${0:_waitTime}, ${1:_holdTime}] spawn  RS_fnc_Handler_WaveRespawn_PenaltyHandler;"
+"[_waitTime, _holdTime] spawn  RS_fnc_Handler_WaveRespawn_PenaltyHandler;"
 ],
 "description": " Handles the wave respawn penalty functionality"
 },
@@ -1255,14 +1255,14 @@
 " RS_fnc_RespawnInformation": {
 "prefix": " RS_fnc_RespawnInformation",
 "body": [
-"[${0:_adminOverride}, ${1:_skipAdminInfo}] spawn  RS_fnc_RespawnInformation;"
+"[_adminOverride, _skipAdminInfo] spawn  RS_fnc_RespawnInformation;"
 ],
 "description": " Helper function to display information about the current respawn circumstances"
 },
 " RS_fnc_RespawnPlayerHandler": {
 "prefix": " RS_fnc_RespawnPlayerHandler",
 "body": [
-"[${0:_adminUtilsParent}] spawn  RS_fnc_RespawnPlayerHandler;"
+"[_adminUtilsParent] spawn  RS_fnc_RespawnPlayerHandler;"
 ],
 "description": " Allows an admin user to forcefully respawn players"
 },
@@ -1276,7 +1276,7 @@
 " RS_fnc_SpectatorHint": {
 "prefix": " RS_fnc_SpectatorHint",
 "body": [
-"[${0:_type}] spawn  RS_fnc_SpectatorHint;"
+"[_type] spawn  RS_fnc_SpectatorHint;"
 ],
 "description": " Handles Hint Display for whether respawn is enabled or disabled."
 },
@@ -1290,7 +1290,7 @@
 " RS_ST_fnc_Incrementer": {
 "prefix": " RS_ST_fnc_Incrementer",
 "body": [
-"[${0:_variable}, ${1:_value}, ${2:_pureValue}] spawn  RS_ST_fnc_Incrementer;"
+"[_variable, _value, _pureValue] spawn  RS_ST_fnc_Incrementer;"
 ],
 "description": " Adds given increment to given variable"
 },
@@ -1339,56 +1339,56 @@
 " RS_TFR_fnc_JamTfrRadios": {
 "prefix": " RS_TFR_fnc_JamTfrRadios",
 "body": [
-"[${0:_unit}, ${1:_vrbl}] spawn  RS_TFR_fnc_JamTfrRadios;"
+"[_unit, _vrbl] spawn  RS_TFR_fnc_JamTfrRadios;"
 ],
 "description": " Jams tfar radios if the player has them while in a specific rift state"
 },
 " RS_Rift_fnc_CreateRiftInteractionCamera": {
 "prefix": " RS_Rift_fnc_CreateRiftInteractionCamera",
 "body": [
-"[${0:_object}, ${1:_objects}, ${2:_focusObject}, ${3:_cam}] spawn  RS_Rift_fnc_CreateRiftInteractionCamera;"
+"[_object, _objects, _focusObject, _cam] spawn  RS_Rift_fnc_CreateRiftInteractionCamera;"
 ],
 "description": " Creates a camera and links screens to that camera"
 },
 " RS_Rift_fnc_CreateRiftInteractionPoint": {
 "prefix": " RS_Rift_fnc_CreateRiftInteractionPoint",
 "body": [
-"[${0:_startObject}, ${1:_type}, ${2:_way}] spawn  RS_Rift_fnc_CreateRiftInteractionPoint;"
+"[_startObject, _type, _way] spawn  RS_Rift_fnc_CreateRiftInteractionPoint;"
 ],
 "description": " Creates position where a player can interact with the rift"
 },
 " RS_Rift_fnc_CreateRiftInteractionSounds": {
 "prefix": " RS_Rift_fnc_CreateRiftInteractionSounds",
 "body": [
-"[${0:_object}, ${1:_variable}, ${2:_soundPath}, ${3:_sound}, ${4:_songLength}] spawn  RS_Rift_fnc_CreateRiftInteractionSounds;"
+"[_object, _variable, _soundPath, _sound, _songLength] spawn  RS_Rift_fnc_CreateRiftInteractionSounds;"
 ],
 "description": " Creates sounds for the rift interaction point"
 },
 " RS_Rift_fnc_CreateRiftInteractionTrigger": {
 "prefix": " RS_Rift_fnc_CreateRiftInteractionTrigger",
 "body": [
-"[${0:_object}, ${1:_control}, ${2:_type}, ${3:_script}, ${4:_trg}] spawn  RS_Rift_fnc_CreateRiftInteractionTrigger;"
+"[_object, _control, _type, _script, _trg] spawn  RS_Rift_fnc_CreateRiftInteractionTrigger;"
 ],
 "description": " Creates a trigger that allows entry or exit from the rift"
 },
 " RS_Rift_fnc_CreateRiftParticleEffect": {
 "prefix": " RS_Rift_fnc_CreateRiftParticleEffect",
 "body": [
-"[${0:_object}] spawn  RS_Rift_fnc_CreateRiftParticleEffect;"
+"[_object] spawn  RS_Rift_fnc_CreateRiftParticleEffect;"
 ],
 "description": " Creates a particle effect on a given position"
 },
 " RS_Rift_fnc_DeleteRiftParticleEffects": {
 "prefix": " RS_Rift_fnc_DeleteRiftParticleEffects",
 "body": [
-"[${0:_object}] spawn  RS_Rift_fnc_DeleteRiftParticleEffects;"
+"[_object] spawn  RS_Rift_fnc_DeleteRiftParticleEffects;"
 ],
 "description": " Deletes all rift particle effects"
 },
 " RS_Rift_fnc_FindRiftInteractionPoint": {
 "prefix": " RS_Rift_fnc_FindRiftInteractionPoint",
 "body": [
-"[${0:_size}, ${1:_unit}, ${2:_variable}] spawn  RS_Rift_fnc_FindRiftInteractionPoint;"
+"[_size, _unit, _variable] spawn  RS_Rift_fnc_FindRiftInteractionPoint;"
 ],
 "description": " Helper for location of rift interaction points based on audio cues"
 },
@@ -1402,14 +1402,14 @@
 " RS_Rift_fnc_FlickerObject": {
 "prefix": " RS_Rift_fnc_FlickerObject",
 "body": [
-"[${0:_object}, ${1:_type}] spawn  RS_Rift_fnc_FlickerObject;"
+"[_object, _type] spawn  RS_Rift_fnc_FlickerObject;"
 ],
 "description": " Flickers an object to visible or invisible"
 },
 " RS_Rift_fnc_GetNearestRiftInteractionPoint": {
 "prefix": " RS_Rift_fnc_GetNearestRiftInteractionPoint",
 "body": [
-"[${0:_unit}, ${1:_force}] spawn  RS_Rift_fnc_GetNearestRiftInteractionPoint;"
+"[_unit, _force] spawn  RS_Rift_fnc_GetNearestRiftInteractionPoint;"
 ],
 "description": " Returns the closest rift interaction point to the player"
 },
@@ -1430,42 +1430,42 @@
 " RS_Rift_fnc_PostProcessEffectsHandler": {
 "prefix": " RS_Rift_fnc_PostProcessEffectsHandler",
 "body": [
-"[${0:_unit}, ${1:_rift}] spawn  RS_Rift_fnc_PostProcessEffectsHandler;"
+"[_unit, _rift] spawn  RS_Rift_fnc_PostProcessEffectsHandler;"
 ],
 "description": " Handles switching between rift post process effects and when inside and outside the rift."
 },
 " RS_Rift_fnc_RegisterRiftControlObject": {
 "prefix": " RS_Rift_fnc_RegisterRiftControlObject",
 "body": [
-"[${0:_object}, ${1:_type}] spawn  RS_Rift_fnc_RegisterRiftControlObject;"
+"[_object, _type] spawn  RS_Rift_fnc_RegisterRiftControlObject;"
 ],
 "description": " Registers the rift interaction point for later use"
 },
 " RS_Rift_fnc_RegisterRiftInteractionPoint": {
 "prefix": " RS_Rift_fnc_RegisterRiftInteractionPoint",
 "body": [
-"[${0:_object}, ${1:_type}] spawn  RS_Rift_fnc_RegisterRiftInteractionPoint;"
+"[_object, _type] spawn  RS_Rift_fnc_RegisterRiftInteractionPoint;"
 ],
 "description": " Registers the rift interaction point for later use"
 },
 " RS_Rift_fnc_RiftControlObject": {
 "prefix": " RS_Rift_fnc_RiftControlObject",
 "body": [
-"[${0:_objectString}, ${1:_delay}] spawn  RS_Rift_fnc_RiftControlObject;"
+"[_objectString, _delay] spawn  RS_Rift_fnc_RiftControlObject;"
 ],
 "description": " Turns an object into a rift control object"
 },
 " RS_Rift_fnc_RiftControlObjectTimeout": {
 "prefix": " RS_Rift_fnc_RiftControlObjectTimeout",
 "body": [
-"[${0:_delay}] spawn  RS_Rift_fnc_RiftControlObjectTimeout;"
+"[_delay] spawn  RS_Rift_fnc_RiftControlObjectTimeout;"
 ],
 "description": " Handles control object timeout hints"
 },
 " RS_Rift_fnc_RiftDamageHandler": {
 "prefix": " RS_Rift_fnc_RiftDamageHandler",
 "body": [
-"[${0:_unit}] spawn  RS_Rift_fnc_RiftDamageHandler;"
+"[_unit] spawn  RS_Rift_fnc_RiftDamageHandler;"
 ],
 "description": " Handles damage taken while in the rift"
 },
@@ -1500,28 +1500,28 @@
 " SAEF_VEH_fnc_RnR_ActionRearm": {
 "prefix": " SAEF_VEH_fnc_RnR_ActionRearm",
 "body": [
-"[${0:_vehString}, ${1:_objString}, ${2:_vehType}, ${3:_additionalScripts}] spawn  SAEF_VEH_fnc_RnR_ActionRearm;"
+"[_vehString, _objString, _vehType, _additionalScripts] spawn  SAEF_VEH_fnc_RnR_ActionRearm;"
 ],
 "description": " Adds action to refuel and rearm the given vehicle within 5m distance from given object"
 },
 " SAEF_VEH_fnc_RnR_ActionRespawn": {
 "prefix": " SAEF_VEH_fnc_RnR_ActionRespawn",
 "body": [
-"[${0:_vehString}, ${1:_objString}, ${2:_vehType}, ${3:_additionalScripts}] spawn  SAEF_VEH_fnc_RnR_ActionRespawn;"
+"[_vehString, _objString, _vehType, _additionalScripts] spawn  SAEF_VEH_fnc_RnR_ActionRespawn;"
 ],
 "description": " Adds action to respawn given vehicle within 5m distance from given object"
 },
 " SAEF_VEH_fnc_RnR_AddToInitQueue": {
 "prefix": " SAEF_VEH_fnc_RnR_AddToInitQueue",
 "body": [
-"[${0:_vehString}, ${1:_objString}, ${2:_vehType}] spawn  SAEF_VEH_fnc_RnR_AddToInitQueue;"
+"[_vehString, _objString, _vehType] spawn  SAEF_VEH_fnc_RnR_AddToInitQueue;"
 ],
 "description": " Adds the given parameters to our queue variable for later initialisation"
 },
 " SAEF_VEH_fnc_RnR_GlobalRename": {
 "prefix": " SAEF_VEH_fnc_RnR_GlobalRename",
 "body": [
-"[${0:_vehicle}, ${1:_vehVarName}, ${2:_isGlobal}] spawn  SAEF_VEH_fnc_RnR_GlobalRename;"
+"[_vehicle, _vehVarName, _isGlobal] spawn  SAEF_VEH_fnc_RnR_GlobalRename;"
 ],
 "description": " Handles global renaming of vehicle"
 },
@@ -1542,28 +1542,28 @@
 " SAEF_VEH_fnc_RnR_PlayerSetup": {
 "prefix": " SAEF_VEH_fnc_RnR_PlayerSetup",
 "body": [
-"[${0:_vehString}, ${1:_objString}] spawn  SAEF_VEH_fnc_RnR_PlayerSetup;"
+"[_vehString, _objString] spawn  SAEF_VEH_fnc_RnR_PlayerSetup;"
 ],
 "description": " Setups the Rearm and Repair functionality for a given vehicle for the player"
 },
 " SAEF_VEH_fnc_fnc_RnR_Rearm": {
 "prefix": " SAEF_VEH_fnc_fnc_RnR_Rearm",
 "body": [
-"[${0:_vehicle}, ${1:_object}, ${2:_vehType}, ${3:_additionalScripts}] spawn  SAEF_VEH_fnc_fnc_RnR_Rearm;"
+"[_vehicle, _object, _vehType, _additionalScripts] spawn  SAEF_VEH_fnc_fnc_RnR_Rearm;"
 ],
 "description": " Rearms the given vehicle"
 },
 " SAEF_VEH_fnc_RnR_Respawn": {
 "prefix": " SAEF_VEH_fnc_RnR_Respawn",
 "body": [
-"[${0:_vehString}, ${1:_object}, ${2:_vehType}, ${3:_additionalScripts}] spawn  SAEF_VEH_fnc_RnR_Respawn;"
+"[_vehString, _object, _vehType, _additionalScripts] spawn  SAEF_VEH_fnc_RnR_Respawn;"
 ],
 "description": " Respawns the Vehicle"
 },
 " SAEF_VEH_fnc_RnR_Setup": {
 "prefix": " SAEF_VEH_fnc_RnR_Setup",
 "body": [
-"[${0:_vehString}, ${1:_objString}] spawn  SAEF_VEH_fnc_RnR_Setup;"
+"[_vehString, _objString] spawn  SAEF_VEH_fnc_RnR_Setup;"
 ],
 "description": " Setups the Rearm and Repair functionality for a given vehicle"
 },
@@ -1577,14 +1577,14 @@
 " SAEF_VD_fnc_Init": {
 "prefix": " SAEF_VD_fnc_Init",
 "body": [
-"[${0:_defaultServerVD}, ${1:_defaultPlayerVD}, ${2:_defaultAircraftVD}, ${3:_defaultShadowVD}, ${4:_defaultFixedCeiling}] spawn  SAEF_VD_fnc_Init;"
+"[_defaultServerVD, _defaultPlayerVD, _defaultAircraftVD, _defaultShadowVD, _defaultFixedCeiling] spawn  SAEF_VD_fnc_Init;"
 ],
 "description": " Initialises the event handlers for the server"
 },
 " SAEF_VD_fnc_ModuleSpawnAreaVehicle": {
 "prefix": " SAEF_VD_fnc_ModuleSpawnAreaVehicle",
 "body": [
-"[${0:_logic}, ${1:_units}, ${2:_activated}] spawn  SAEF_VD_fnc_ModuleSpawnAreaVehicle;"
+"[_logic, _units, _activated] spawn  SAEF_VD_fnc_ModuleSpawnAreaVehicle;"
 ],
 "description": " Handles module functionality for spawn areas"
 },
