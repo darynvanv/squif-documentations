@@ -1,4 +1,4 @@
-[
+{
 "": {
 "prefix": null,
 "body": [
@@ -1602,4 +1602,4 @@
 ],
 "description": " Handles View Distance and the settings for all connected clients and the server"
 }
-]
+}
